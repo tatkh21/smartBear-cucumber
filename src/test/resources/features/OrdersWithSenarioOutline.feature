@@ -3,7 +3,7 @@ Feature: SmartBear order process with Scenario Outline
   Background: Assuming user logged in with valid credentials
     Given user logged in to the SmartBear app
 
-@wip
+
   Scenario Outline: User is logged into SmartBear Tester account and on Order page
     Given User clicks to "Order"
     And User selects "<product>" from product dropdown
@@ -15,7 +15,7 @@ Feature: SmartBear order process with Scenario Outline
     And User enters "<zip>" to Zip
     And User selects "<card type>" as card type
     And User enters "<card number>" to card number
-    And User enters "<experation date>" to expiration date
+    And User enters "<expiration date>" to expiration date
     And User clicks process button
     Then User verifies "<name>" is in the list
 

@@ -23,11 +23,8 @@ public class Login_Steps {
     }
     @When("user enters valid credentials")
     public void user_enters_valid_credentials() {
-        String username = ConfigurationReader.getProperty("username");
-        String password = ConfigurationReader.getProperty("password");
-        loginPage.userNameInput.sendKeys(username);
-        loginPage.passwordInput.sendKeys(password);
-        loginPage.LoginButton.click();
+        loginPage.loginToSmartBear();
+
 
     }
     @Then("user should be able to see WebOrders page")
