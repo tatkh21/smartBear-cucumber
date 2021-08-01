@@ -8,7 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ViewAllOrders extends BasePage {
     public ViewAllOrders() {
-        PageFactory.initElements(Driver.getDriver(), this);
     }
     public String verifyName(String name) {
         WebElement nameInColumn = Driver.getDriver().findElement(By.xpath("//table/tbody/tr/td[.='" + name + "']"));

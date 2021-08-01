@@ -8,7 +8,6 @@ import org.openqa.selenium.support.ui.Select;
 
 public class OrderPage extends BasePage{
 public OrderPage () {
-    PageFactory.initElements(Driver.getDriver(),this);
 }
 @FindBy (xpath = "//select")
     public WebElement dropdown;
